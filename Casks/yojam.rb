@@ -1,6 +1,6 @@
 cask "yojam" do
-  version "1.0.2"
-  sha256 "631052071e5544b590dfba00aee330b28120ffa9a29e3fbe8c8c5b650ba0ee27"
+  version "1.1.0"
+  sha256 "af8c4bd104a91850080ca5bc1e254dd076a17ff07aaa57432f4335c90fb25b82"
 
   url "https://yoj.am/releases/Yojam-#{version}.dmg"
   name "Yojam"
