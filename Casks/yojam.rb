@@ -1,6 +1,6 @@
 cask "yojam" do
-  version "1.1.1"
-  sha256 "1296add840b558255ddfb18d19a448f3b475f491231464f41650fb6b93f48424"
+  version "1.1.2"
+  sha256 "044bedf5afae7c18a1bd1bfbc82ba10db020b861c9a8e341d0c96907d6b52530"
 
   url "https://yoj.am/releases/Yojam-#{version}.dmg"
   name "Yojam"
@@ -8,12 +8,11 @@ cask "yojam" do
   homepage "https://yoj.am/"
 
   livecheck do
-    url "https://yoj.am/appcast.xml"
-    strategy :sparkle, &:short_version
+    skip "Sparkle feed is pinned while users manually migrate to the current update key"
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Yojam.app"
 
